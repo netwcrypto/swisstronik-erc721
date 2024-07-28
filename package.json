@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@swisstronik/utils": "^1.2.1",
+    "dotenv": "^16.4.5"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --network hardhat",
+    "deploy": "hardhat run scripts/deploy.js --network swisstronik",
+    "verify": "hardhat run scripts/verify.js --network swisstronik",
+    "mint": "hardhat run scripts/mint.js --network swisstronik"
+  }
+}
